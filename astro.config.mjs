@@ -19,6 +19,10 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: '📝 Research Blog',
+					items: [{ autogenerate: { directory: 'blog', collapsed: false } }],
+				},
+				{
 					label: '📖 All Categories',
 					items: [{ autogenerate: { directory: 'lessons', collapsed: true } }],
 				},
