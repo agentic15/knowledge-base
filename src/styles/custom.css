@@ -1,0 +1,51 @@
+/* Custom accent colour — deep blue */
+:root {
+  --sl-color-accent-low: #1e3a5f;
+  --sl-color-accent: #3b82f6;
+  --sl-color-accent-high: #93c5fd;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #dbeafe;
+  --sl-color-accent: #2563eb;
+  --sl-color-accent-high: #1e40af;
+}
+
+/* Wider content area */
+.sl-container { max-width: 1400px; }
+.content-panel { max-width: 860px; }
+
+/* Landing page hero */
+.hero-badges { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .5rem; }
+.hero-badge {
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  padding: .2rem .65rem;
+  border-radius: 9999px;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+/* Category grid on landing */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
+.category-card {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  padding: .9rem 1.1rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .15s, background .15s;
+}
+.category-card:hover {
+  border-color: var(--sl-color-accent);
+  background: var(--sl-color-accent-low);
+}
+.category-card strong { font-size: .9rem; }
+.category-card span { font-size: .75rem; color: var(--sl-color-gray-3); }

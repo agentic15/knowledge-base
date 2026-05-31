@@ -1,0 +1,45 @@
+---
+title: Hosting & Infrastructure Knowledge Base
+description: 6,658 lessons across 176 categories — GPU infrastructure, AI hosting, web servers, payment systems, and more.
+template: splash
+hero:
+  tagline: 6,658 lessons across 176 categories — GPU infrastructure, AI hosting, web servers, payment systems, and more.
+  actions:
+    - text: Browse All Categories
+      link: /knowledge-base/lessons/
+      icon: right-arrow
+      variant: primary
+    - text: GPU Infrastructure
+      link: /knowledge-base/lessons/gpu-infrastructure/
+      icon: laptop
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What's Inside
+
+<CardGrid stagger>
+  <Card title="GPU & AI Infrastructure" icon="rocket">
+    GPU cluster setup, CUDA optimization, distributed training, AI model serving, and cloud GPU cost comparison.
+  </Card>
+  <Card title="Web Servers & Proxies" icon="laptop">
+    Nginx, Apache, Caddy, HAProxy, load balancing, SSL/TLS, caching strategies, and performance tuning.
+  </Card>
+  <Card title="Cloud & Hosting Platforms" icon="cloud">
+    AWS, GCP, Azure, DigitalOcean, Hetzner, bare metal vs cloud trade-offs, cost optimization.
+  </Card>
+  <Card title="Payment Systems" icon="puzzle">
+    Stripe, PayPal, payment gateways, PCI compliance, subscription billing, and fraud prevention.
+  </Card>
+  <Card title="Databases & Storage" icon="document">
+    PostgreSQL, MySQL, Redis, MongoDB, object storage, backup strategies, and replication.
+  </Card>
+  <Card title="Security & DevOps" icon="approve-check">
+    Firewall configuration, VPN setup, CI/CD pipelines, Docker, Kubernetes, and monitoring.
+  </Card>
+</CardGrid>
+
+## Browse by Category
+
+Use the **sidebar** to navigate all 176 categories, or use the **search bar** (press `/` or `Ctrl+K`) to instantly find any of the 6,658 lessons.
